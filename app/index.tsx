@@ -97,6 +97,7 @@ export default function GameScreen() {
             <TextInput
                 style={styles.input}
                 placeholder="Nom du monstre…"
+                placeholderTextColor="#aaa"
                 value={input}
                 onChangeText={setInput}
                 autoCorrect={false}
