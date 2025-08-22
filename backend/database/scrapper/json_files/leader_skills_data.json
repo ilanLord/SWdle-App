@@ -1,0 +1,1542 @@
+[
+    {
+        "id": 143,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 226,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 50,
+        "element": "Fire"
+    },
+    {
+        "id": 227,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 50,
+        "element": "Wind"
+    },
+    {
+        "id": 228,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 50,
+        "element": "Light"
+    },
+    {
+        "id": 229,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 50,
+        "element": "Dark"
+    },
+    {
+        "id": 144,
+        "attribute": "Attack Speed",
+        "area": "General",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 152,
+        "attribute": "Attack Power",
+        "area": "Arena",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 156,
+        "attribute": "Defense",
+        "area": "Arena",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 153,
+        "attribute": "HP",
+        "area": "Arena",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 155,
+        "attribute": "Accuracy",
+        "area": "Arena",
+        "amount": 55,
+        "element": null
+    },
+    {
+        "id": 166,
+        "attribute": "Resistance",
+        "area": "Arena",
+        "amount": 55,
+        "element": null
+    },
+    {
+        "id": 146,
+        "attribute": "Resistance",
+        "area": "General",
+        "amount": 41,
+        "element": null
+    },
+    {
+        "id": 158,
+        "attribute": "Defense",
+        "area": "General",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 145,
+        "attribute": "Critical Rate",
+        "area": "General",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 142,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 230,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 50,
+        "element": "Water"
+    },
+    {
+        "id": 231,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 50,
+        "element": "Fire"
+    },
+    {
+        "id": 232,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 50,
+        "element": "Wind"
+    },
+    {
+        "id": 233,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 50,
+        "element": "Light"
+    },
+    {
+        "id": 234,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 50,
+        "element": "Dark"
+    },
+    {
+        "id": 212,
+        "attribute": "HP",
+        "area": "Guild",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 131,
+        "attribute": "Attack Power",
+        "area": "Dungeon",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 190,
+        "attribute": "Resistance",
+        "area": "Guild",
+        "amount": 55,
+        "element": null
+    },
+    {
+        "id": 169,
+        "attribute": "Attack Speed",
+        "area": "Guild",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 191,
+        "attribute": "Critical Rate",
+        "area": "Guild",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 183,
+        "attribute": "Attack Power",
+        "area": "Guild",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 182,
+        "attribute": "HP",
+        "area": "Guild",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 213,
+        "attribute": "Accuracy",
+        "area": "Guild",
+        "amount": 48,
+        "element": null
+    },
+    {
+        "id": 181,
+        "attribute": "Defense",
+        "area": "Guild",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 157,
+        "attribute": "Accuracy",
+        "area": "General",
+        "amount": 41,
+        "element": null
+    },
+    {
+        "id": 167,
+        "attribute": "Attack Speed",
+        "area": "Arena",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 185,
+        "attribute": "HP",
+        "area": "Arena",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 184,
+        "attribute": "Accuracy",
+        "area": "Arena",
+        "amount": 48,
+        "element": null
+    },
+    {
+        "id": 151,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 50,
+        "element": "Dark"
+    },
+    {
+        "id": 137,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 50,
+        "element": "Dark"
+    },
+    {
+        "id": 132,
+        "attribute": "Critical Rate",
+        "area": "Dungeon",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 165,
+        "attribute": "Resistance",
+        "area": "Dungeon",
+        "amount": 55,
+        "element": null
+    },
+    {
+        "id": 163,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 38,
+        "element": "Dark"
+    },
+    {
+        "id": 110,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 30,
+        "element": "Dark"
+    },
+    {
+        "id": 162,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 38,
+        "element": "Light"
+    },
+    {
+        "id": 139,
+        "attribute": "Defense",
+        "area": "Dungeon",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 115,
+        "attribute": "Attack Speed",
+        "area": "Arena",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 114,
+        "attribute": "Resistance",
+        "area": "Arena",
+        "amount": 48,
+        "element": null
+    },
+    {
+        "id": 161,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 38,
+        "element": "Water"
+    },
+    {
+        "id": 224,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 55,
+        "element": "Dark"
+    },
+    {
+        "id": 221,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 55,
+        "element": "Light"
+    },
+    {
+        "id": 220,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 55,
+        "element": "Water"
+    },
+    {
+        "id": 217,
+        "attribute": "Attack Speed",
+        "area": "General",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 216,
+        "attribute": "Critical Rate",
+        "area": "General",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 196,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 195,
+        "attribute": "Attack Power",
+        "area": "Guild",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 210,
+        "attribute": "Critical Rate",
+        "area": "Arena",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 209,
+        "attribute": "Attack Power",
+        "area": "Arena",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 154,
+        "attribute": "Critical Rate",
+        "area": "Arena",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 150,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 50,
+        "element": "Light"
+    },
+    {
+        "id": 148,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 50,
+        "element": "Wind"
+    },
+    {
+        "id": 147,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 50,
+        "element": "Fire"
+    },
+    {
+        "id": 149,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 50,
+        "element": "Water"
+    },
+    {
+        "id": 189,
+        "attribute": "Accuracy",
+        "area": "Guild",
+        "amount": 55,
+        "element": null
+    },
+    {
+        "id": 160,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 38,
+        "element": "Wind"
+    },
+    {
+        "id": 159,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 38,
+        "element": "Fire"
+    },
+    {
+        "id": 96,
+        "attribute": "Attack Speed",
+        "area": "Arena",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 74,
+        "attribute": "HP",
+        "area": "Guild",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 214,
+        "attribute": "Defense",
+        "area": "Guild",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 240,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 45,
+        "element": "Light"
+    },
+    {
+        "id": 239,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 45,
+        "element": "Wind"
+    },
+    {
+        "id": 238,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 45,
+        "element": "Water"
+    },
+    {
+        "id": 215,
+        "attribute": "Critical Rate",
+        "area": "Guild",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 236,
+        "attribute": "Critical Rate",
+        "area": "General",
+        "amount": 38,
+        "element": "Dark"
+    },
+    {
+        "id": 211,
+        "attribute": "Defense",
+        "area": "Arena",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 237,
+        "attribute": "Resistance",
+        "area": "Guild",
+        "amount": 48,
+        "element": null
+    },
+    {
+        "id": 243,
+        "attribute": "Resistance",
+        "area": "General",
+        "amount": 35,
+        "element": null
+    },
+    {
+        "id": 219,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 134,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 50,
+        "element": "Wind"
+    },
+    {
+        "id": 138,
+        "attribute": "Critical Rate",
+        "area": "Dungeon",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 135,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 50,
+        "element": "Water"
+    },
+    {
+        "id": 164,
+        "attribute": "HP",
+        "area": "Dungeon",
+        "amount": 44,
+        "element": null
+    },
+    {
+        "id": 73,
+        "attribute": "Defense",
+        "area": "Guild",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 78,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 25,
+        "element": null
+    },
+    {
+        "id": 207,
+        "attribute": "Attack Speed",
+        "area": "Arena",
+        "amount": 20,
+        "element": null
+    },
+    {
+        "id": 82,
+        "attribute": "Defense",
+        "area": "Dungeon",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 87,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 50,
+        "element": "Fire"
+    },
+    {
+        "id": 92,
+        "attribute": "Attack Power",
+        "area": "Arena",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 95,
+        "attribute": "Critical Rate",
+        "area": "Arena",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 100,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 40,
+        "element": "Fire"
+    },
+    {
+        "id": 106,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 30,
+        "element": "Fire"
+    },
+    {
+        "id": 98,
+        "attribute": "Resistance",
+        "area": "Arena",
+        "amount": 40,
+        "element": null
+    },
+    {
+        "id": 80,
+        "attribute": "Attack Speed",
+        "area": "General",
+        "amount": 19,
+        "element": null
+    },
+    {
+        "id": 81,
+        "attribute": "Critical Rate",
+        "area": "General",
+        "amount": 19,
+        "element": null
+    },
+    {
+        "id": 75,
+        "attribute": "Attack Power",
+        "area": "Guild",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 94,
+        "attribute": "Accuracy",
+        "area": "Arena",
+        "amount": 40,
+        "element": null
+    },
+    {
+        "id": 122,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 50,
+        "element": "Fire"
+    },
+    {
+        "id": 123,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 40,
+        "element": "Fire"
+    },
+    {
+        "id": 128,
+        "attribute": "Attack Speed",
+        "area": "Dungeon",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 99,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 25,
+        "element": null
+    },
+    {
+        "id": 111,
+        "attribute": "Resistance",
+        "area": "General",
+        "amount": 30,
+        "element": null
+    },
+    {
+        "id": 84,
+        "attribute": "Attack Power",
+        "area": "Dungeon",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 89,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 50,
+        "element": "Wind"
+    },
+    {
+        "id": 105,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 40,
+        "element": "Wind"
+    },
+    {
+        "id": 108,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 30,
+        "element": "Wind"
+    },
+    {
+        "id": 97,
+        "attribute": "HP",
+        "area": "Arena",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 119,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 50,
+        "element": "Wind"
+    },
+    {
+        "id": 71,
+        "attribute": "Resistance",
+        "area": "General",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 124,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 40,
+        "element": "Wind"
+    },
+    {
+        "id": 130,
+        "attribute": "Resistance",
+        "area": "Dungeon",
+        "amount": 48,
+        "element": null
+    },
+    {
+        "id": 187,
+        "attribute": "Defense",
+        "area": "General",
+        "amount": 25,
+        "element": null
+    },
+    {
+        "id": 83,
+        "attribute": "HP",
+        "area": "Dungeon",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 88,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 50,
+        "element": "Water"
+    },
+    {
+        "id": 93,
+        "attribute": "Defense",
+        "area": "Arena",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 101,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 40,
+        "element": "Water"
+    },
+    {
+        "id": 107,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 30,
+        "element": "Water"
+    },
+    {
+        "id": 208,
+        "attribute": "Attack Speed",
+        "area": "Guild",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 118,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 50,
+        "element": "Water"
+    },
+    {
+        "id": 70,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 22,
+        "element": null
+    },
+    {
+        "id": 125,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 40,
+        "element": "Water"
+    },
+    {
+        "id": 129,
+        "attribute": "HP",
+        "area": "Dungeon",
+        "amount": 38,
+        "element": null
+    },
+    {
+        "id": 76,
+        "attribute": "Attack Speed",
+        "area": "Guild",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 39,
+        "attribute": "Resistance",
+        "area": "Dungeon",
+        "amount": 33,
+        "element": null
+    },
+    {
+        "id": 85,
+        "attribute": "Resistance",
+        "area": "Dungeon",
+        "amount": 40,
+        "element": null
+    },
+    {
+        "id": 90,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 50,
+        "element": "Light"
+    },
+    {
+        "id": 56,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 35,
+        "element": "Light"
+    },
+    {
+        "id": 103,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 40,
+        "element": "Light"
+    },
+    {
+        "id": 109,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 30,
+        "element": "Light"
+    },
+    {
+        "id": 116,
+        "attribute": "Attack Speed",
+        "area": "Dungeon",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 120,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 50,
+        "element": "Light"
+    },
+    {
+        "id": 72,
+        "attribute": "Critical Rate",
+        "area": "General",
+        "amount": 17,
+        "element": null
+    },
+    {
+        "id": 126,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 40,
+        "element": "Light"
+    },
+    {
+        "id": 77,
+        "attribute": "Resistance",
+        "area": "Guild",
+        "amount": 40,
+        "element": null
+    },
+    {
+        "id": 86,
+        "attribute": "Accuracy",
+        "area": "Dungeon",
+        "amount": 40,
+        "element": null
+    },
+    {
+        "id": 91,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 50,
+        "element": "Dark"
+    },
+    {
+        "id": 57,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 35,
+        "element": "Dark"
+    },
+    {
+        "id": 104,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 40,
+        "element": "Dark"
+    },
+    {
+        "id": 79,
+        "attribute": "Accuracy",
+        "area": "General",
+        "amount": 30,
+        "element": null
+    },
+    {
+        "id": 121,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 50,
+        "element": "Dark"
+    },
+    {
+        "id": 127,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 40,
+        "element": "Dark"
+    },
+    {
+        "id": 112,
+        "attribute": "Critical Rate",
+        "area": "Guild",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 113,
+        "attribute": "Accuracy",
+        "area": "Guild",
+        "amount": 40,
+        "element": null
+    },
+    {
+        "id": 186,
+        "attribute": "Critical Rate",
+        "area": "Dungeon",
+        "amount": 24,
+        "element": null
+    },
+    {
+        "id": 176,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 20,
+        "element": null
+    },
+    {
+        "id": 179,
+        "attribute": "Resistance",
+        "area": "General",
+        "amount": 25,
+        "element": null
+    },
+    {
+        "id": 180,
+        "attribute": "Defense",
+        "area": "General",
+        "amount": 20,
+        "element": null
+    },
+    {
+        "id": 192,
+        "attribute": "Defense",
+        "area": "General",
+        "amount": 22,
+        "element": null
+    },
+    {
+        "id": 193,
+        "attribute": "Attack Speed",
+        "area": "General",
+        "amount": 17,
+        "element": null
+    },
+    {
+        "id": 194,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 22,
+        "element": null
+    },
+    {
+        "id": 197,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 40,
+        "element": "Water"
+    },
+    {
+        "id": 198,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 40,
+        "element": "Fire"
+    },
+    {
+        "id": 199,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 40,
+        "element": "Wind"
+    },
+    {
+        "id": 200,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 40,
+        "element": "Light"
+    },
+    {
+        "id": 201,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 40,
+        "element": "Dark"
+    },
+    {
+        "id": 218,
+        "attribute": "Accuracy",
+        "area": "General",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 222,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 55,
+        "element": "Fire"
+    },
+    {
+        "id": 223,
+        "attribute": "Accuracy",
+        "area": "Element",
+        "amount": 55,
+        "element": "Wind"
+    },
+    {
+        "id": 235,
+        "attribute": "Accuracy",
+        "area": "General",
+        "amount": 35,
+        "element": null
+    },
+    {
+        "id": 241,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 45,
+        "element": "Fire"
+    },
+    {
+        "id": 242,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 45,
+        "element": "Dark"
+    },
+    {
+        "id": 244,
+        "attribute": "Defense",
+        "area": "General",
+        "amount": 28,
+        "element": null
+    },
+    {
+        "id": 253,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 45,
+        "element": "Fire"
+    },
+    {
+        "id": 254,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 45,
+        "element": "Dark"
+    },
+    {
+        "id": 27,
+        "attribute": "Attack Speed",
+        "area": "Guild",
+        "amount": 16,
+        "element": null
+    },
+    {
+        "id": 17,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 30,
+        "element": "Fire"
+    },
+    {
+        "id": 22,
+        "attribute": "Accuracy",
+        "area": "Dungeon",
+        "amount": 26,
+        "element": null
+    },
+    {
+        "id": 68,
+        "attribute": "Attack Power",
+        "area": "Arena",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 62,
+        "attribute": "Attack Power",
+        "area": "Guild",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 46,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 30,
+        "element": "Fire"
+    },
+    {
+        "id": 48,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 23,
+        "element": "Fire"
+    },
+    {
+        "id": 53,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 35,
+        "element": "Fire"
+    },
+    {
+        "id": 59,
+        "attribute": "HP",
+        "area": "Guild",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 64,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 30,
+        "element": "Fire"
+    },
+    {
+        "id": 67,
+        "attribute": "Accuracy",
+        "area": "Arena",
+        "amount": 26,
+        "element": null
+    },
+    {
+        "id": 23,
+        "attribute": "HP",
+        "area": "Arena",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 11,
+        "attribute": "HP",
+        "area": "Dungeon",
+        "amount": 18,
+        "element": null
+    },
+    {
+        "id": 2,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 15,
+        "element": null
+    },
+    {
+        "id": 29,
+        "attribute": "Accuracy",
+        "area": "Guild",
+        "amount": 26,
+        "element": null
+    },
+    {
+        "id": 18,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 30,
+        "element": "Water"
+    },
+    {
+        "id": 43,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 30,
+        "element": "Water"
+    },
+    {
+        "id": 178,
+        "attribute": "Attack Power",
+        "area": "Dungeon",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 8,
+        "attribute": "Resistance",
+        "area": "General",
+        "amount": 20,
+        "element": null
+    },
+    {
+        "id": 49,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 23,
+        "element": "Water"
+    },
+    {
+        "id": 37,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 23,
+        "element": "Water"
+    },
+    {
+        "id": 54,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 35,
+        "element": "Water"
+    },
+    {
+        "id": 31,
+        "attribute": "Critical Rate",
+        "area": "Guild",
+        "amount": 16,
+        "element": null
+    },
+    {
+        "id": 65,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 30,
+        "element": "Water"
+    },
+    {
+        "id": 7,
+        "attribute": "HP",
+        "area": "General",
+        "amount": 15,
+        "element": null
+    },
+    {
+        "id": 19,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 30,
+        "element": "Wind"
+    },
+    {
+        "id": 24,
+        "attribute": "Attack Speed",
+        "area": "Arena",
+        "amount": 16,
+        "element": null
+    },
+    {
+        "id": 41,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 30,
+        "element": "Wind"
+    },
+    {
+        "id": 44,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 30,
+        "element": "Wind"
+    },
+    {
+        "id": 50,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 23,
+        "element": "Wind"
+    },
+    {
+        "id": 34,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 23,
+        "element": "Wind"
+    },
+    {
+        "id": 55,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 35,
+        "element": "Wind"
+    },
+    {
+        "id": 69,
+        "attribute": "Resistance",
+        "area": "Arena",
+        "amount": 26,
+        "element": null
+    },
+    {
+        "id": 30,
+        "attribute": "Resistance",
+        "area": "Guild",
+        "amount": 26,
+        "element": null
+    },
+    {
+        "id": 21,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 30,
+        "element": "Light"
+    },
+    {
+        "id": 25,
+        "attribute": "HP",
+        "area": "Dungeon",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 35,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 23,
+        "element": "Light"
+    },
+    {
+        "id": 16,
+        "attribute": "Attack Power",
+        "area": "General",
+        "amount": 18,
+        "element": null
+    },
+    {
+        "id": 40,
+        "attribute": "Attack Speed",
+        "area": "General",
+        "amount": 10,
+        "element": null
+    },
+    {
+        "id": 6,
+        "attribute": "HP",
+        "area": "Dungeon",
+        "amount": 17,
+        "element": null
+    },
+    {
+        "id": 42,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 30,
+        "element": "Light"
+    },
+    {
+        "id": 45,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 30,
+        "element": "Light"
+    },
+    {
+        "id": 10,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 25,
+        "element": "Light"
+    },
+    {
+        "id": 51,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 23,
+        "element": "Light"
+    },
+    {
+        "id": 20,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 30,
+        "element": "Dark"
+    },
+    {
+        "id": 26,
+        "attribute": "Critical Rate",
+        "area": "Arena",
+        "amount": 16,
+        "element": null
+    },
+    {
+        "id": 47,
+        "attribute": "Attack Power",
+        "area": "Element",
+        "amount": 30,
+        "element": "Dark"
+    },
+    {
+        "id": 4,
+        "attribute": "Defense",
+        "area": "Element",
+        "amount": 25,
+        "element": "Dark"
+    },
+    {
+        "id": 52,
+        "attribute": "Critical Rate",
+        "area": "Element",
+        "amount": 23,
+        "element": "Dark"
+    },
+    {
+        "id": 28,
+        "attribute": "Defense",
+        "area": "Guild",
+        "amount": 21,
+        "element": null
+    },
+    {
+        "id": 66,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 30,
+        "element": "Dark"
+    },
+    {
+        "id": 12,
+        "attribute": "HP",
+        "area": "Element",
+        "amount": 25,
+        "element": "Dark"
+    },
+    {
+        "id": 32,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 23,
+        "element": "Fire"
+    },
+    {
+        "id": 36,
+        "attribute": "Attack Speed",
+        "area": "Element",
+        "amount": 23,
+        "element": "Dark"
+    },
+    {
+        "id": 58,
+        "attribute": "Critical DMG",
+        "area": "General",
+        "amount": 25,
+        "element": null
+    },
+    {
+        "id": 170,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 38,
+        "element": "Fire"
+    },
+    {
+        "id": 173,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 38,
+        "element": "Water"
+    },
+    {
+        "id": 172,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 38,
+        "element": "Wind"
+    },
+    {
+        "id": 171,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 38,
+        "element": "Light"
+    },
+    {
+        "id": 174,
+        "attribute": "Resistance",
+        "area": "Element",
+        "amount": 38,
+        "element": "Dark"
+    },
+    {
+        "id": 175,
+        "attribute": "Critical Rate",
+        "area": "General",
+        "amount": 15,
+        "element": null
+    },
+    {
+        "id": 177,
+        "attribute": "Attack Speed",
+        "area": "General",
+        "amount": 15,
+        "element": null
+    }
+]
