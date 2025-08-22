@@ -90,8 +90,8 @@ export default function GameScreen() {
         />
       )}
 
-      <ResultRowTitle />
-      <ScrollView horizontal>
+      <ScrollView horizontal contentContainerStyle={{display: "flex", alignItems: "center", flexDirection: "column"}}>
+        <ResultRowTitle />
         <FlatList
           data={results}
           keyExtractor={(item, idx) => `${item.monster.id}-${idx}`}
@@ -127,7 +127,7 @@ export default function GameScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingHorizontal: 16, paddingBottom: 40, paddingTop: 70 },
+  container: { flex: 1, paddingHorizontal: 16, paddingBottom: 40, paddingTop: 70, display: "flex", alignItems: "center" },
   title: { fontSize: 32, fontWeight: "bold", marginBottom: 12, width: "100%", textAlign: "center" },
   input: {
     borderWidth: 1,
