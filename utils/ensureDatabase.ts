@@ -1,58 +1,61 @@
-// src/utils/ensureDatabase.ts
-import { Asset } from "expo-asset";
-import * as FileSystem from "expo-file-system";
+import { Platform } from "react-native";
 
 export const DB_NAME = "database.db";
+const INIT_FLAG = "swdle_db_initialized";
 
-const getDbDir = () => `${FileSystem.documentDirectory}SQLite`;
-const getDbPath = () => `${getDbDir()}/${DB_NAME}`;
+export async function ensureDatabaseCopied({ overwrite = false } = {}): Promise<any> {
+  if (Platform.OS === "web") {
+    // Si déjà initialisé et window.db existe → retourne
+    if (typeof window !== "undefined" && window.localStorage?.getItem(INIT_FLAG) && !overwrite) {
+      if (window.db) return window.db;
+      // sinon, on continue pour recréer la DB
+    }
 
-/**
- * Copie l'asset database.db vers <DocumentDirectory>/SQLite/database.db
- * - Si overwrite=true : supprime et recopie.
- * - Sinon : compare la taille du fichier bundlé et du fichier cible ; si différente, recopie.
- */
-export async function ensureDatabaseCopied({ overwrite = false } = {}): Promise<string> {
+    const initSqlJs = (await import("sql.js")).default;
+    const SQL = await initSqlJs({ locateFile: () => "/sql-wasm.wasm" });
+
+    const res = await fetch("/database.db"); // fichier dans public/
+    if (!res.ok) throw new Error(`Failed to fetch database.db: ${res.status}`);
+    const buffer = await res.arrayBuffer();
+
+    const db = new SQL.Database(new Uint8Array(buffer));
+    console.log("DB buffer byteLength:", buffer.byteLength);
+
+    window.db = db;
+    try { window.localStorage?.setItem(INIT_FLAG, "1"); } catch {}
+    return db;
+  }
+
+  // -----------------------
+  // Native (Android/iOS)
+  // -----------------------
+  const FileSystem = require("expo-file-system");
+  const { Asset } = require("expo-asset");
+
+  const getDbDir = () => `${FileSystem.documentDirectory}SQLite`;
+  const getDbPath = () => `${getDbDir()}/${DB_NAME}`;
   const dst = getDbPath();
 
-  // assure le dossier existe
   await FileSystem.makeDirectoryAsync(getDbDir(), { intermediates: true }).catch(() => {});
 
-  // load asset
   const asset = Asset.fromModule(require("@/assets/database.db"));
-  await asset.downloadAsync(); // rempli asset.localUri si besoin
+  await asset.downloadAsync();
   const src = asset.localUri ?? asset.uri;
   if (!src) throw new Error("Impossible de trouver l'URI locale de l'asset database.db");
 
-  // info src
-  const srcInfo = await FileSystem.getInfoAsync(src, { size: true });
-  // info dst
-  const dstInfo = await FileSystem.getInfoAsync(dst, { size: true });
+  const srcInfo = await FileSystem.getInfoAsync(src, { size: true }).catch(() => ({}));
+  const dstInfo = await FileSystem.getInfoAsync(dst, { size: true }).catch(() => ({ exists: false }));
 
-  // Si dst existe et qu'on ne veut pas overwrite : compare les tailles
   if (dstInfo.exists && !overwrite) {
     const dstSize = dstInfo.size ?? -1;
     const srcSize = srcInfo.size ?? -1;
-    // console.log(`[ensureDatabase] dst exists (${dst}): size=${dstSize}, src size=${srcSize}`);
-    if (dstSize === srcSize && dstSize > 0) {
-    //   console.log("[ensureDatabase] DB already present and sizes match, skip copy.");
-      return dst;
-    } else {
-    //   console.log("[ensureDatabase] DB present but size differs -> will overwrite.");
-    }
+    if (dstSize === srcSize && dstSize > 0) return dst;
   }
 
-  // Si on doit écraser et que dst existe, delete d'abord (idempotent)
   if (dstInfo.exists && (overwrite || dstInfo.size !== srcInfo.size)) {
-    try {
-      await FileSystem.deleteAsync(dst, { idempotent: true });
-    } catch (e) {
-    //   console.warn("[ensureDatabase] Erreur suppression ancienne DB :", e);
-    }
+    await FileSystem.deleteAsync(dst, { idempotent: true }).catch(() => {});
   }
 
-  // Copy
   await FileSystem.copyAsync({ from: src, to: dst });
-//   console.log("[ensureDatabase] Copied DB asset to", dst, " (src:", src, "size:", srcInfo.size, ")");
   return dst;
 }

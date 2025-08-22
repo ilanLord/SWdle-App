@@ -1,0 +1,5 @@
+{
+  "name": "expo-sqlite",
+  "version": "0.0.0-shim",
+  "main": "index.js"
+}

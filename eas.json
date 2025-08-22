@@ -5,7 +5,16 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "web": {
+        "buildCommand": "expo build:web"
+      }
     },
     "preview": {
       "distribution": "internal",
@@ -14,6 +23,9 @@
       },
       "ios": {
         "simulator": true
+      },
+      "web": {
+        "buildCommand": "expo build:web"
       }
     },
     "production": {
@@ -22,6 +34,9 @@
       },
       "ios": {
         "simulator": false
+      },
+      "web": {
+        "buildCommand": "expo build:web"
       }
     }
   },

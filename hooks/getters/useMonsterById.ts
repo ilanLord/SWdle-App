@@ -1,27 +1,30 @@
-// src/hooks/getters/useMonsterById.ts
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { Platform } from "react-native";
 import { Monster } from "@/types/Monster";
-import { useDb } from "@/utils/useDb";
 import { rowToMonster } from "./_helpers";
+import { WebDbContext } from "@/app/_layout";
+import { useDb } from "@/utils/useDb";
 
 export function useMonsterById(id?: number | null) {
+  const isWeb = Platform.OS === "web";
+  const webDb = useContext(WebDbContext);
+  const mobileDb = useDb();
+
   const [data, setData] = useState<Monster | null>(null);
-  const [loading, setLoading] = useState<boolean>(!!id);
+  const [loading, setLoading] = useState(!!id);
   const [error, setError] = useState<string | null>(null);
-  const db = useDb();
 
   useEffect(() => {
-    let mounted = true;
     if (!id) {
       setData(null);
       setLoading(false);
       return;
     }
 
-    (async () => {
-      try {
-        if (!db) throw new Error("DB non initialisée");
+    let mounted = true;
 
+    const fetchMonster = async (db: any) => {
+      try {
         const sql = `
           SELECT m.*,
                  ls.id AS ls_id,
@@ -35,20 +38,37 @@ export function useMonsterById(id?: number | null) {
           LIMIT 1;
         `;
 
-        // @ts-ignore
-        const rows: any[] = await (db as any).getAllAsync(sql, id);
+        let rows: any[] = [];
+        if (isWeb) {
+          const res = db.exec(sql.replace("?", id.toString()));
+          if (res.length) {
+            const keys = res[0].columns;
+            rows = res[0].values.map((row: any[]) => {
+              const obj: any = {};
+                keys.forEach((k: string, i: number) => (obj[k] = row[i]));
+              return obj;
+            });
+          }
+        } else {
+          // @ts-ignore
+          rows = await db.getAllAsync(sql, id);
+        }
+
         if (!mounted) return;
-        setData(rows?.[0] ? rowToMonster(rows[0]) : null);
+        setData(rows[0] ? rowToMonster(rows[0]) : null);
       } catch (e: any) {
         if (!mounted) return;
         setError(String(e?.message ?? e));
       } finally {
         if (mounted) setLoading(false);
       }
-    })();
+    };
+
+    const db = isWeb ? webDb : mobileDb;
+    if (db) fetchMonster(db);
 
     return () => { mounted = false; };
-  }, [db, id]);
+  }, [id, isWeb, webDb, mobileDb]);
 
   return { data, loading, error };
 }

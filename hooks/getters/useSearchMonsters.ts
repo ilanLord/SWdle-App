@@ -1,28 +1,31 @@
-// src/hooks/getters/useSearchMonsters.ts
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { Platform } from "react-native";
 import { Monster } from "@/types/Monster";
-import { useDb } from "@/utils/useDb";
 import { rowToMonster } from "./_helpers";
+import { WebDbContext } from "@/app/_layout";
+import { useDb } from "@/utils/useDb";
 
 export function useSearchMonsters(query: string, limit = 12) {
+  const isWeb = Platform.OS === "web";
+  const webDb = useContext(WebDbContext);
+  const mobileDb = useDb();
+
   const [results, setResults] = useState<Monster[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const db = useDb();
 
   useEffect(() => {
-    let mounted = true;
-    if (!query || query.trim().length === 0) {
+    if (!query.trim()) {
       setResults([]);
       setLoading(false);
       return;
     }
 
-    (async () => {
+    let mounted = true;
+    const fetchSearch = async (db: any) => {
       try {
-        if (!db) throw new Error("DB non initialisée");
+        setLoading(true);
         const q = `%${query.replace(/%/g, "")}%`;
-
         const sql = `
           SELECT m.*,
                  ls.id AS ls_id,
@@ -37,22 +40,37 @@ export function useSearchMonsters(query: string, limit = 12) {
           LIMIT ?;
         `;
 
-        setLoading(true);
-        // @ts-ignore
-        const rows: any[] = await (db as any).getAllAsync(sql, q, limit);
+        let rows: any[] = [];
+        if (isWeb) {
+          const res = db.exec(sql.replace("?", `"${q}"`).replace("?", limit.toString()));
+          if (res.length) {
+            const keys = res[0].columns;
+            rows = res[0].values.map((row: any[]) => {
+              const obj: any = {};
+                keys.forEach((k: string, i: number) => (obj[k] = row[i]));
+              return obj;
+            });
+          }
+        } else {
+          // @ts-ignore
+          rows = await db.getAllAsync(sql, q, limit);
+        }
 
         if (!mounted) return;
-        setResults((rows ?? []).map(rowToMonster));
+        setResults(rows.map(rowToMonster));
       } catch (e: any) {
         if (!mounted) return;
         setError(String(e?.message ?? e));
       } finally {
         if (mounted) setLoading(false);
       }
-    })();
+    };
+
+    const db = isWeb ? webDb : mobileDb;
+    if (db) fetchSearch(db);
 
     return () => { mounted = false; };
-  }, [db, query, limit]);
+  }, [query, limit, isWeb, webDb, mobileDb]);
 
   return { results, loading, error };
 }
