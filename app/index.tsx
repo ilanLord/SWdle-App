@@ -127,7 +127,7 @@ export default function GameScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingHorizontal: 16, paddingBottom: 40, paddingTop: 70, display: "flex", alignItems: "center" },
+  container: { flex: 1, paddingHorizontal: 16, paddingBottom: 40, paddingTop: 70 },
   title: { fontSize: 32, fontWeight: "bold", marginBottom: 12, width: "100%", textAlign: "center" },
   input: {
     borderWidth: 1,
