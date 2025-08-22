@@ -19,7 +19,8 @@
         "foregroundImage": "./assets/expo_icons/icon-512.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.ilanlord.SWDLE"
     },
     "web": {
       "bundler": "metro",
@@ -42,6 +43,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "554e8e05-d366-4753-a17f-2e8b129ac0fd"
+      }
     }
   }
 }

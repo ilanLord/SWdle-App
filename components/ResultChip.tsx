@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { SizeAttr } from '@/config/size_attr';
 
 export default function ResultChip({ label, status }: { label: string | number; status: 'ok' | 'partial' | 'no' }) {
-    const bg = status === 'ok' ? '#4caf50' : status === 'partial' ? '#ffd54f' : '#e0e0e0';
-    const color = status === 'no' ? '#333' : '#fff';
+    const bg = status === 'ok' ? '#4caf50' : status === 'partial' ? '#ffd54f' : '#f44336';
+    const color = status === 'no' ? '#fff' : '#fff';
     return (
         <View style={[styles.chip, { backgroundColor: bg }]}>
             <Text style={[styles.text, { color }]}>{label}</Text>

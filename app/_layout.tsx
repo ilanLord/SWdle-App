@@ -4,6 +4,8 @@ import { View, Text, ActivityIndicator } from "react-native";
 import { Stack } from "expo-router";
 import { SQLiteProvider } from "expo-sqlite";
 import { ensureDatabaseCopied, DB_NAME } from "@/utils/ensureDatabase";
+import { StatusBar } from "expo-status-bar";
+
 
 export default function RootLayout() {
   const [ready, setReady] = useState(false);
@@ -34,6 +36,7 @@ export default function RootLayout() {
 
   return (
     <SQLiteProvider databaseName={DB_NAME}>
+      <StatusBar style="dark" />
       <Stack screenOptions={{ headerShown: false }} />
     </SQLiteProvider>
   );
